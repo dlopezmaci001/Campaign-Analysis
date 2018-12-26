@@ -29,7 +29,7 @@ library(cwhmisc)
 
 # Load the data 
 
-df <- read.csv2("C:/Users/Daniel/Desktop/Nimerya/bank_customer_survey.csv",sep=",")
+df <- read.csv2("YOUR_PATH"/bank_customer_survey.csv",sep=",")
 
 
 ######################### Exploratory analysis ################################################
@@ -76,7 +76,7 @@ ggplot(df,aes(x=age,y=balance)) + geom_point() + geom_smooth() + ylim(0,11000) #
 
 # Is there a relationship between the age and subscription to deposit
 
-ggplot(df,aes(x=age,y=y)) + geom_point(position=position_jitter(w=0.5,h=0.5)) + geom_smooth() # No se que es esto
+ggplot(df,aes(x=age,y=y)) + geom_point(position=position_jitter(w=0.5,h=0.5)) + geom_smooth()
 
 # Let's interpret based on whether they got the deal or not
 
